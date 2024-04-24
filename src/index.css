@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --text-color: #20335a;
+  --button-color: #382ae1;
+}
+
+html {
+  overflow-y: hidden;
+  --tw-bg-opacity: 1;
+  background-color: hsl(225 100% 94% / var(--tw-bg-opacity));
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('../public/images/pattern-background-desktop.svg')!important;
+  }
+}
+
+body {
+  background-image: url('../public/images/pattern-background-mobile.svg');
+}
+
+.button-primary {
+  background-color: var(--button-color);
+}
+
+.text-primary {
+  color: var(--text-color);
+}
+
+.subcard {
+  background-color: #f8f9fe;
+}
+
+.link {
+  color: var(--button-color);
+  text-decoration: underline;
+}
